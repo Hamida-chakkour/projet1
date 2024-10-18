@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <center>
+      <h2>Formulaire d'inscription</h2>
+    </center>
+    <center>
+      <h3>Infos personnelles</h3>
+      <form action="/submit" method="post">
+        <table>
+          <tr>
+            <td><label>Civilité *</label></td>
+            <td>
+              <input type="radio" id="mme" name="civilite" value="Mme" />
+              <label for="mme">Mme</label>
+              <input type="radio" id="mlle" name="civilite" value="Mlle" />
+              <label for="mlle">Mlle</label>
+              <input type="radio" id="mr" name="civilite" value="Mr" />
+              <label for="mr">Mr</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="nom">Nom *</label></td>
+            <td><input type="text" id="nom" name="nom" required /></td>
+            <td><label for="prenom">Prénom *</label></td>
+            <td><input type="text" id="prenom" name="prenom" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">E-mail *</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+            <td><label for="confirm_email">Confirmer e-mail *</label></td>
+            <td>
+              <input
+                type="email"
+                id="confirm_email"
+                name="confirm_email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Mot de passe *</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+            <td>
+              <label for="confirm_password">Confirmer mot de passe *</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="adresse">Adresse</label></td>
+            <td><input type="text" id="adresse" name="adresse" /></td>
+            <td><label for="complement">Complément</label></td>
+            <td><input type="text" id="complement" name="complement" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="ville">Ville</label></td>
+            <td><input type="text" id="ville" name="ville" /></td>
+            <td><label for="code_postal">Code postal</label></td>
+            <td><input type="text" id="code_postal" name="code_postal" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="pays">Pays</label></td>
+            <td><input type="text" id="pays" name="pays" /></td>
+            <td><label for="telephone">Téléphone fixe</label></td>
+            <td><input type="text" id="telephone" name="telephone" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="mobile">Téléphone mobile</label></td>
+            <td><input type="text" id="mobile" name="mobile" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Avez-vous un badge télépéage? *</label></td>
+            <td>
+              <input
+                type="radio"
+                id="oui_badge"
+                name="badge"
+                value="Oui"
+                required
+              />
+              <label for="oui_badge">Oui</label>
+              <input type="radio" id="non_badge" name="badge" value="Non" />
+              <label for="non_badge">Non</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Souhaitez-vous recevoir des offres ? *</label></td>
+            <td>
+              <input
+                type="radio"
+                id="oui_offres"
+                name="offres"
+                value="Oui"
+                required
+              />
+              <label for="oui_offres">Oui</label>
+              <input type="radio" id="non_offres" name="offres" value="Non" />
+              <label for="non_offres">Non</label>
+            </td>
+          </tr>
+        </table>
+
+        <h3>Newsletter</h3>
+        <p>
+          Inscrivez-vous à la newsletter et découvrez en avant-première nos
+          nouveaux services et événements.
+        </p>
+        <p>
+          <input
+            type="radio"
+            id="oui_newsletter"
+            name="newsletter"
+            value="Oui"
+          />
+          <label for="oui_newsletter">Oui, je m'inscris</label>
+          <input
+            type="radio"
+            id="non_newsletter"
+            name="newsletter"
+            value="Non"
+          />
+          <label for="non_newsletter">Non merci</label>
+        </p>
+
+        <input type="submit" value="Valider" />
+      </form>
+      <td><a href="index.html">brabus </a></td>
+    </center>
+  </body>
+</html>
